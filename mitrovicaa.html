@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: "Pacifico-Regular";
+        src: url(Pacifico-Regular.ttf);
+    }
+    h1.qe{
+        font-family: "Pacifico-Regular";
+        color:white; 
+    }
+    @font-face {
+        font-family: "Righteous-Regular";
+        src: url(Righteous-Regular.ttf);
+    }
+    h3.lo{
+        font-family: "Righteous-Regular";
+        color:white;
+    }
+    a{
+        color: white;
+        border-right: 40px;
+        background-color:#27471C;
+        text-decoration: none;
+        
+    }
+    body{
+        background: rgb(3,130,101);
+background: radial-gradient(circle, rgba(3,130,101,1) 1%, rgba(71,139,196,1) 99%);
+    }
+    a:hover{
+        opacity: 0.75;
+        color:black;
+    }
+    p.le{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color: #92CCC6;
+        font-family: "Pacifico-Regular";
+        font-size: 20px;
+        color:white;
+        border:1px solid black;
+        width:700px;
+        height: 300px;
+    }
+    img.pooo{
+        margin-left:200px;
+    }
+    h1.tit{
+        font-family: "Pacifico-Regular";
+        color:white;
+        text-shadow: 7px 4px 5px rgba(20, 112, 28, 1);
+    }
+    h1.li{
+        font-family: "Pacifico-Regular";
+        color:#28316D;
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+    }
+    h1.ui{
+        color:#4C3C36;
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+    }
+    h1.xh{
+        color:#D3481C;
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+    }
+    h1.uj{
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+        color:#285265;
+    }
+    h1.mi{
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+        color:#000;
+    }
+    h1.bb{
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+        color:green;
+    }
+    h1.vv{
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+        color:red; 
+    }
+    h1.iii{
+        font-family: "Pacifico-Regular";
+        text-shadow: 3px 5px 2px rgba(255, 255, 255, 1);
+        color:#A81B4B; 
+      
+    }
+    p.lll{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color:#31409E;
+        font-family: "Pacifico-Regular";
+        font-size: 18px;
+        color:white;
+        border:1px solid black;
+        width:400px;
+        height: 270px;
+    }
+    p.pos{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color:#90746B;
+        font-family: "Pacifico-Regular";
+        font-size: 18px;
+        color:white;
+        border:1px solid black;
+        width:400px;
+        height: 150px;
+    }
+    p.pp{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color:#B04B2C;
+        font-family: "Pacifico-Regular";
+        font-size: 18px;
+        color:white;
+        border:1px solid black;
+        width:400px;
+        height: 170px;
+    }
+    p.aq{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color:#52C1F2;
+        font-family: "Pacifico-Regular";
+        font-size: 18px;
+        color:white;
+        border:1px solid black;
+        width:400px;
+        height: 240px;
+    }
+    p.mm{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color:#BBBBBB;
+        font-family: "Pacifico-Regular";
+        font-size: 18px;
+        color:white;
+        border:1px solid black;
+        width:400px;
+        height: 200px;
+    }
+    p.ba{
+        padding-right: 10 px;
+        padding-top: 50px;
+        margin:0 auto;
+        text-align: center;
+        border-radius: 20%;
+        background-color:#7D8E76;
+        font-family: "Pacifico-Regular";
+        font-size: 18px;
+        color:white;
+        border:1px solid black;
+        width:400px;
+        height: 200px;
+    }
+
+
+
+
+    .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+fieldset{
+    background-color: #A81B4B;
+}
+</style>
+<body>
+    <table width="100%">
+        <tr>
+            <td bgcolor="#2D7131" ><h1 align="center" class="qe">Mitrovica Guide&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="2.png" width="75"></span> </h1></td>
+            <td bgcolor="#2D7131" ><h3 align="center" class="lo"><a href="#mi">Pjesa Kryesore</a></h3></td>
+            <td bgcolor="#2D7131" ><h3 align="center" class="lo"><a href="#ops">Vendet Atraktive</a></h3></td>
+            <td bgcolor="#2D7131" ><h3 align="center" class="lo"><a href="#vler">Vleresimi</a></h3></td>
+            <td bgcolor="#2D7131" ><h3 align="center" class="lo"><a href="#fundi">Kontakti</a></h3></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><h1 class="tit">Mitrovica</h1></td>
+            
+
+        </tr>
+        <tr>
+            <td>
+                <p class="le">Mitrovica  është qytet në pjesën veriore të Republikës së Kosovës si dhe qendër e komunës dhe rajonit me të njëjtin emër.
+                    Pozita e mirë gjeografike në mes të dy lumenjve Ibrit dhe Sitnicës kanë ndikuar që në parahistori ky territor të banohet. 
+                    Mitrovica është, pa dyshim, një ndër qytetet më të rëndësishme jo vetëm në Kosovë, por edhe në gjithë Gadishullin Ilirik e më gjerë. Shtrihet në fushën aluviale të lumenjve: Ibër, Sitnicë dhe Lushtë si dhe në shpatijet e kodrave që e rrethojnë.Mitrovica ka rreth 74600 banorë.
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td ><img class="pooo" width="400" src="1.jpg"></td>
+
+            
+        </tr>
+        
+        <tr>
+           <td align="center" colspan="5"><iframe width="560" height="315" src="https://www.youtube.com/embed/S5NLrh_5c_o?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td> 
+        </tr>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <td>
+                <h1 class="li" id="ops">Liqeni Akumulues</h1>
+            </td>
+
+        </tr>
+        <tr>
+           <td><p class="lll">Liqeni i Mitrovicës është një liqe artificial i cili ka gjatësi prej rreth 1.8 kilometrash, gjerësi deri në 150 metra dhe thellësi deri në 4 metra. Liqeni i Mitrovicës shtrihet në hapësirën përgjatë rrjedhës së lumit Ibër, në mes Mitrovicës dhe fshatrave: Suhodolli i Poshtëm, Suhodolli i Epërm, Zhabari i Poshtëm e deri në Gushacë e Vinarcë të Poshtme.</p> </td> 
+           <td><img src="liqe.jpg" height="220"></td>
+           <td><img src="liq.jpeg"height="220" ></td>
+           <td><img src="lii.jpg" height="220"></td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <h1 class="ui">Ura e Ibrit</h1>
+            </td>
+        </tr> -->
+       
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h1 class="ui">Ura e Ibrit</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="pos">Ura e Ibrit  ndodhet në qendër të qytetit të Mitrovicës që bashkon dy pjesët e qytetit Mitrovicën Jugore dhe Mitrovicën Veriore.</p>
+            </td>
+            <td><img src="uuuu.jpg" height="300"></td>
+            <td><img src="ui.jpg" height="300"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h1 class="xh">Xhamia e Madhe </h1>
+            </td>
+
+        </tr>
+        <tr>
+            <td><p class="pp">Xhamia qendrore në Mitrovicë është ndër më të mëdhajat dhe më modernet në Kosovë.Me arkitekturen brilliante dhe interiorin e jashtëzakonshëm ia vlen që ta vizitoni.</p></td>
+            <td><img src="xhamiaa.jpg" height="300"></td>
+            <td><img src="xhamia.jpg" height="300"></td>
+        </tr>
+        
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h1 class="uj">Pishina:"Aqua Park"</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="aq">Pishina:"Aqua Park" në Mitrovicë është ndër pishinat më moderne në Kosovë.E pasur me topogana e lojëra të shumta,ia vlen të vizitohet në ditët përvëluese të Verës.Këtu mund ta përjetoni edhe kënaqësinë e detit përshkak se ka edhe valë.Freskia ka një emër,ai është,Aqua Park.</p>
+            </td>
+            <td><img src="01.jpg" height="250"></td>
+            <td><img src="02.jpg" height="250"></td>
+            <td><img src="03.jpg" height="250"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h1 class="mi">Monumenti i minatorëve të rënë </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="mm">Monumenti i minatorëve të rënë  në Mitrovicë është një trashëgimi kulturore që i kushtohej minatorëve partizanë të Mitrovicës të rënë gjatë Luftës së Dytë Botërore.
+                    Ia vlen të vizitohet sepse shihet e tërë Mitrovica nga aty.
+                    </p>
+            </td>
+            <td><img src="mm.jpg" height="300"></td>
+            <td><img src="23.jpg" height="300"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+<td><h1 class="bb">Parku i Erës në Bajgorë </h1></td>
+        </tr>
+        <tr>
+            <td><p class="ba">Parku i Erës në Bajgorë është një central i prodhimit të energjisë elektrike nga fuqia e erës me kapacitet prej 105 MW.
+                Mirëpo ia vlen të vizitohet përshkak të ajrit të pastërt dhe peisazhit të mrekullueshëm.
+                </p></td>
+                <td><img src="baj.jpg" height="320"></td>
+                <td><img src="baa.jpg" height="320"></td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+    <table align="center">
+        <tr>
+            <td colspan="4">
+                <fieldset >
+                    <legend>
+                        <h1 class="vv" id="vler">Si e vlerësoni Mitrovicën?</h1>
+                    </legend>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+    <table width="100%">
+        <tr>
+            <td align="center" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46780.23381821361!2d20.81404425894915!3d42.877812163961394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135345063679ba21%3A0xc24c0fe075e868e2!2sMitrovica!5e0!3m2!1sen!2s!4v1689776411547!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor=#27471C >
+                
+                <h1 class="iii" id="fundi">Ejani në qytetin më të mirë në Kosovë &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy; Mitrovica Guide&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="tel.png" height="25">049-614-022</span></h1>
+                
+            </td>
+        </tr>
+       
+    </table>
+  
+</body>
+</html>
